@@ -1,6 +1,6 @@
 // Load blogs from JSON
 async function loadBlogs() {
-  const response = await fetch('data/blogs.json');
+  const response = await fetch("blogs.json");
   const blogs = await response.json();
   return blogs;
 }

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Getting Started with React Hooks",
+    "image": "assets/images/blog1.jpg",
+    "description": "A beginner's guide to using React Hooks for state management.",
+    "content": "<h2>Introduction</h2><p>React Hooks revolutionized functional components...</p><pre><code>const [state, setState] = useState(initialValue);</code></pre><p>More content here...</p>",
+    "categories": ["React", "JavaScript"],
+    "date": "2023-10-01"
+  },
+  {
+    "id": 2,
+    "title": "CSS Grid vs Flexbox: When to Use What",
+    "image": "assets/images/blog2.jpg",
+    "description": "Comparing CSS Grid and Flexbox for modern layouts.",
+    "content": "<h2>Overview</h2><p>Grid is for 2D layouts, Flexbox for 1D...</p><pre><code>.grid { display: grid; }</code></pre>",
+    "categories": ["CSS", "Web Design"],
+    "date": "2023-09-15"
+  },
+  {
+    "id": 3,
+    "title": "Building APIs with Node.js",
+    "image": "assets/images/blog3.jpg",
+    "description": "Step-by-step tutorial on creating RESTful APIs.",
+    "content": "<h2>Setup</h2><p>Install Express...</p><pre><code>app.get('/api', (req, res) => res.json({}));</code></pre>",
+    "categories": ["Node.js", "Backend"],
+    "date": "2023-08-20"
+  }
+]

@@ -1,2 +1,3 @@
-# tech-blog
-a website for blogging 
+# Protfolio of cafe website
+
+Protfolio

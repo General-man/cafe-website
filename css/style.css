@@ -575,3 +575,187 @@ footer {
     
     .step { margin-bottom: 40px; }
 }
+
+/* -----------------------------------------------------------
+   7. SHOPPING CART SYSTEM
+----------------------------------------------------------- */
+
+/* Add to Cart Button on Menu Items */
+.btn-add-cart {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.btn-add-cart:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Navbar Cart Trigger */
+.cart-trigger {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    color: var(--text-dark);
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Cart Sidebar Overlay */
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1001; /* Above navbar */
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.cart-overlay.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Cart Sidebar */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Hidden by default */
+    width: 350px;
+    height: 100%;
+    background: var(--bg-light);
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    z-index: 1002;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+body.dark-mode .cart-sidebar {
+    background: #1a1a1a;
+    border-left: 1px solid #333;
+}
+
+.cart-sidebar.open {
+    right: 0;
+}
+
+/* Cart Header */
+.cart-header {
+    padding: 20px;
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-cart {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Cart Items Area */
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+body.dark-mode .cart-item {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.cart-item-info h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-qty {
+    background: #ddd;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+body.dark-mode .btn-qty { background: #444; color: white; }
+
+/* Cart Footer / Totals */
+.cart-footer {
+    padding: 20px;
+    background: rgba(0,0,0,0.02);
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+body.dark-mode .cart-total { color: var(--secondary-color); }
+
+.btn-checkout {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #25d366; /* WhatsApp Green */
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-checkout:hover {
+    background-color: #1ebc57;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 400px) {
+    .cart-sidebar { width: 100%; }
+}

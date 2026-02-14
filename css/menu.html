@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Urban Roast Co.</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Specific Styles for Menu Page Header */
+        .page-header {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            height: 40vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .menu-category { margin-bottom: 60px; }
+        .menu-category h3 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        body.dark-mode .menu-category h3 { color: var(--text-dark); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Urban Roast <span class="accent">Co.</span></a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">Our Story</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="index.html#contact">Visit Us</a>
+                <a href="https://wa.me/15551234567" class="btn-nav cta-btn">Order Now</a>
+                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div>
+            <h1>Our Menu</h1>
+            <p>Sip, savor, and enjoy our handcrafted selections.</p>
+        </div>
+    </header>
+
+    <section class="container pb-5">
+        
+        <div class="menu-category">
+            <div class="text-center"><h3>Espresso Classics</h3></div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Espresso"></div>
+                    <div class="menu-info">
+                        <div class="menu-head"><h4>Double Espresso</h4><span class="price">$3.50</span></div>
+                        <p>Rich, intense, and full-bodied single origin shot.</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cappuccino"></div>
+                    <div class="menu-info">
+                        <div class="menu-head"><h4>Classic Cappuccino</h4><span class="price">$4.50</span></div>
+                        <p>Equal parts espresso, steamed milk, and milk foam.</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://images.unsplash.com/photo-1551024601-564d6dbf4e19?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Flat White"></div>
+                    <div class="menu-info">
+                        <div class="menu-head"><h4>Flat White</h4><span class="price">$4.75</span></div>
+                        <p>Silky micro-foam poured over a double ristretto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <div class="text-center"><h3>Cold & Refreshing</h3></div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://images.unsplash.com/photo-1517701604599-bb29b5dd7359?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Iced Latte"></div>
+                    <div class="menu-info">
+                        <div class="menu-head"><h4>Vanilla Iced Latte</h4><span class="price">$5.25</span></div>
+                        <p>House-made vanilla syrup with espresso over ice.</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://images.unsplash.com/photo-1461023058943-48db09b9acb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cold Brew"></div>
+                    <div class="menu-info">
+                        <div class="menu-head"><h4>Kyoto Cold Brew</h4><span class="price">$5.50</span></div>
+                        <p>Slow-drip cold brew, low acidity, high caffeine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <div class="text-center"><h3>Artisan Bakery</h3></div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://images.unsplash.com/photo-1555507036-ab1f40388085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Croissant"></div>
+                    <div class="menu-info">
+                        <div class="menu-head"><h4>Butter Croissant</h4><span class="price">$3.75</span></div>
+                        <p>Classic french pastry, buttery and flaky layers.</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cookie"></div>
+                    <div class="menu-info">
+                        <div class="menu-head"><h4>Sea Salt Choco Cookie</h4><span class="price">$3.00</span></div>
+                        <p>Dark chocolate chunks with a hint of sea salt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3>Urban Roast Co.</h3>
+            </div>
+            <div class="copyright text-center">
+                <p>&copy; 2024 Urban Roast Co.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/15551234567?text=Hi%20Urban%20Roast%20Co,%20I%20would%20like%20to%20place%20an%20order." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

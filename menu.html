@@ -4,56 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | Urban Roast Co.</title>
-    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link rel="stylesheet" href="css/style.css">
     
     <style>
-        /* Specific Styles for Menu Page Header */
         .page-header {
             background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             height: 40vh;
             background-size: cover;
             background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            margin-bottom: 50px;
+            display: flex; align-items: center; justify-content: center;
+            color: white; text-align: center; margin-bottom: 50px;
         }
-        
-        .menu-category { margin-bottom: 60px; }
         .menu-category h3 {
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 30px;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            display: inline-block;
-            padding-bottom: 10px;
+            font-size: 2rem; text-align: center; margin-bottom: 30px;
+            color: var(--primary-color); border-bottom: 2px solid var(--secondary-color);
+            display: inline-block; padding-bottom: 10px;
         }
         body.dark-mode .menu-category h3 { color: var(--text-dark); }
+        .menu-category { margin-bottom: 60px; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">Urban Roast <span class="accent">Co.</span></a>
             <div class="nav-links" id="nav-links">
                 <a href="index.html">Home</a>
                 <a href="index.html#about">Our Story</a>
                 <a href="menu.html" class="active">Menu</a>
-                <a href="index.html#contact">Visit Us</a>
-                <a href="https://wa.me/15551234567" class="btn-nav cta-btn">Order Now</a>
+                <a href="index.html#contact">Location</a>
+                
                 <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+
+                <div class="cart-trigger" id="cart-trigger">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
             </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </div>
+            <div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
         </div>
     </nav>
 
@@ -74,6 +65,7 @@
                     <div class="menu-info">
                         <div class="menu-head"><h4>Double Espresso</h4><span class="price">$3.50</span></div>
                         <p>Rich, intense, and full-bodied single origin shot.</p>
+                        <button class="btn-add-cart" onclick="addToCart('dbl_esp', 'Double Espresso', 3.50)">Add to Cart</button>
                     </div>
                 </div>
                 <div class="menu-card">
@@ -81,13 +73,7 @@
                     <div class="menu-info">
                         <div class="menu-head"><h4>Classic Cappuccino</h4><span class="price">$4.50</span></div>
                         <p>Equal parts espresso, steamed milk, and milk foam.</p>
-                    </div>
-                </div>
-                <div class="menu-card">
-                    <div class="menu-img"><img src="https://images.unsplash.com/photo-1551024601-564d6dbf4e19?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Flat White"></div>
-                    <div class="menu-info">
-                        <div class="menu-head"><h4>Flat White</h4><span class="price">$4.75</span></div>
-                        <p>Silky micro-foam poured over a double ristretto.</p>
+                        <button class="btn-add-cart" onclick="addToCart('capp', 'Classic Cappuccino', 4.50)">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -101,6 +87,7 @@
                     <div class="menu-info">
                         <div class="menu-head"><h4>Vanilla Iced Latte</h4><span class="price">$5.25</span></div>
                         <p>House-made vanilla syrup with espresso over ice.</p>
+                        <button class="btn-add-cart" onclick="addToCart('iced_latte', 'Vanilla Iced Latte', 5.25)">Add to Cart</button>
                     </div>
                 </div>
                 <div class="menu-card">
@@ -108,6 +95,7 @@
                     <div class="menu-info">
                         <div class="menu-head"><h4>Kyoto Cold Brew</h4><span class="price">$5.50</span></div>
                         <p>Slow-drip cold brew, low acidity, high caffeine.</p>
+                        <button class="btn-add-cart" onclick="addToCart('kyoto', 'Kyoto Cold Brew', 5.50)">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -121,6 +109,7 @@
                     <div class="menu-info">
                         <div class="menu-head"><h4>Butter Croissant</h4><span class="price">$3.75</span></div>
                         <p>Classic french pastry, buttery and flaky layers.</p>
+                        <button class="btn-add-cart" onclick="addToCart('croissant_butter', 'Butter Croissant', 3.75)">Add to Cart</button>
                     </div>
                 </div>
                 <div class="menu-card">
@@ -128,6 +117,7 @@
                     <div class="menu-info">
                         <div class="menu-head"><h4>Sea Salt Choco Cookie</h4><span class="price">$3.00</span></div>
                         <p>Dark chocolate chunks with a hint of sea salt.</p>
+                        <button class="btn-add-cart" onclick="addToCart('cookie', 'Sea Salt Cookie', 3.00)">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -135,21 +125,31 @@
 
     </section>
 
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-cart" id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items">
+            </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn-checkout" id="checkout-btn">
+                <i class="fab fa-whatsapp"></i> Order Now
+            </button>
+        </div>
+    </div>
+
     <footer>
         <div class="container footer-content">
-            <div class="footer-logo">
-                <h3>Urban Roast Co.</h3>
-            </div>
-            <div class="copyright text-center">
-                <p>&copy; 2024 Urban Roast Co.</p>
-            </div>
+            <div class="footer-logo"><h3>Urban Roast Co.</h3></div>
+            <div class="copyright text-center"><p>&copy; 2024 Urban Roast Co.</p></div>
         </div>
     </footer>
-
-    <a href="https://wa.me/15551234567?text=Hi%20Urban%20Roast%20Co,%20I%20would%20like%20to%20place%20an%20order." class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
     <script src="js/script.js"></script>
 </body>
 </html>

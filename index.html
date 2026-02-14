@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Roast Co. | Premium Specialty Coffee</title>
+    <meta name="description" content="Experience artisan roasted coffee in a luxury urban setting. Order online or visit us today.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Urban Roast <span class="accent">Co.</span></a>
+            
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">Our Story</a>
+                <a href="menu.html">Menu</a>
+                <a href="#contact">Location</a>
+                <a href="https://wa.me/15551234567" class="btn btn-nav">Order Now</a>
+                
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Crafted Coffee.<br>Urban Soul.</h1>
+            <p class="hero-subtext">Experience the art of specialty coffee, ethically sourced and roasted to perfection.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/15551234567" class="btn btn-primary">Order Now</a>
+                <a href="menu.html" class="btn btn-secondary">View Menu</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+    </header>
+
+    <section class="stats-banner">
+        <div class="container stats-grid">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-mug-hot"></i>
+                <h3>50K+</h3>
+                <p>Cups Served</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-users"></i>
+                <h3>12K+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-leaf"></i>
+                <h3>100%</h3>
+                <p>Ethical Sourcing</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" id="about">
+        <div class="container about-grid">
+            <div class="about-text" data-aos="fade-right">
+                <h4 class="accent-text">Our Story</h4>
+                <h2>More Than Just Coffee.</h2>
+                <p>At Urban Roast Co., we believe coffee is a ritual, not a routine. Born in the heart of the city, we source only the finest single-origin beans and roast them in small batches to highlight their unique flavor profiles.</p>
+                <p class="mt-4">Whether you need a quiet corner to work or a vibrant space to connect, our doors are open.</p>
+                <br>
+                <a href="#contact" class="text-link">Visit our roastery &rarr;</a>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Barista pouring coffee">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-cream">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Seamless Ordering</h2>
+                <p class="italic-text">From our machine to your hand in three steps.</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step" data-aos="zoom-in">
+                    <div class="step-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>1. Browse Menu</h3>
+                    <p>Explore our signature blends and artisan pastries online.</p>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="step-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>2. WhatsApp Us</h3>
+                    <p>Click the chat button to send your order instantly.</p>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="step-icon"><i class="fas fa-box"></i></div>
+                    <h3>3. Pickup / Delivery</h3>
+                    <p>Grab your coffee hot at the counter or get it delivered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" id="menu-preview">
+        <div class="container">
+            <div class="text-center">
+                <h2>Signature Blends</h2>
+                <p>Our customers' daily essentials.</p>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" data-aos="fade-up">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Latte Art">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-head">
+                            <h4>Urban Latte</h4>
+                            <span class="price">$5.50</span>
+                        </div>
+                        <p>Our signature house blend espresso with velvety micro-foam.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cold Brew">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-head">
+                            <h4>Nitro Cold Brew</h4>
+                            <span class="price">$6.00</span>
+                        </div>
+                        <p>Cold brew infused with nitrogen for a creamy, stout-like texture.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pastry">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-head">
+                            <h4>Almond Croissant</h4>
+                            <span class="price">$4.25</span>
+                        </div>
+                        <p>Freshly baked daily with marzipan filling and toasted almonds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="menu.html" class="btn btn-outline">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark text-light">
+        <div class="container text-center">
+            <div class="testimonial-card" data-aos="zoom-in">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"The ambiance is unmatched, and the espresso is the smoothest I've had in the city. A true hidden gem for coffee lovers."</p>
+                <p class="reviewer-name">- Sarah Jenkins, Local Guide</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Visit Us</h2>
+                <p>Come for the coffee, stay for the vibe.</p>
+                <br>
+                <ul class="contact-details">
+                    <li class="mb-3"><i class="fas fa-map-marker-alt"></i> 123 Artisan Avenue, Downtown District, NY 10001</li>
+                    <li class="mb-3"><i class="fas fa-clock"></i> Mon-Fri: 7am - 8pm <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sat-Sun: 8am - 9pm</li>
+                    <li class="mb-3"><i class="fas fa-phone"></i> (555) 123-4567</li>
+                    <li class="mb-3"><i class="fas fa-envelope"></i> hello@urbanroastco.com</li>
+                </ul>
+
+                <div class="newsletter mt-4">
+                    <h4>Join the Club</h4>
+                    <p>Get 10% off your first order.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.9873196845941!3d40.74844797932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629783019409!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Urban Roast Co.</h3>
+                    <p>Premium Coffee Roasters</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>&copy; 2024 Urban Roast Co. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/15551234567?text=Hi%20Urban%20Roast%20Co,%20I%20would%20like%20to%20place%20an%20order." class="whatsapp-float" target="_blank" aria-label="Order on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <script src="js/script.js"></script>
+    <script>
+        // Initialize AOS directly here for simplicity
+        AOS.init();
+    </script>
+
+</body>
+</html>
